@@ -55,20 +55,20 @@ export default {
 
     const updateNote = ()=>{
       console.log(noteUpdate.value)
-      axios.patch(`http://127.0.0.1:8000/notes/${noteId}`, noteUpdate.value)
+      axios.patch(`https://be.thinh/notes/${noteId}`, noteUpdate.value)
             .then(function (response) {
               console.log(response);
             })
     }
 
     const deleteNote = ()=>{
-      axios.delete(`http://127.0.0.1:8000/notes/${noteId}`)
+      axios.delete(`https://be.thinh.com/notes/${noteId}`)
             .then(function (response) {
               console.log(response);
             })
             state.value = false
     }
-    axios.get(`http://127.0.0.1:8000/notes/${noteId}`)
+    axios.get(`https://be.thinh.com/notes/${noteId}`)
           .then(response => response)
           .then(response => {
             notes.value = response.data

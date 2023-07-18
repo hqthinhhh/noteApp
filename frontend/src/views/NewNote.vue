@@ -44,7 +44,7 @@ import {  ref, computed } from 'vue';
       ])
 
       const test = async ()=>{
-        await axios.post(`http://127.0.0.1:8000/notes`, notes.value )
+        await axios.post(`https://be.thinh.com/notes`, notes.value )
               .then(function (response) {
                 noteId.value = response.data.id;
                 console.log(noteId.value)

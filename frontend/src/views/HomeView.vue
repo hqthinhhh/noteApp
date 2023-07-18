@@ -42,7 +42,7 @@ const options = ref([
   { text: 'Done', value: 'Done' }
 ])
 
-const api = axios.get('http://127.0.0.1:8000/notes')
+const api = axios.get('https://be.thinh.com/notes')
             .then(response => response)
             .then(response => {
               notes.value = response.data
@@ -52,14 +52,14 @@ const updateNote = (id, note)=>{
       // noteUp.value = notes.value.find(note => note.id == id)
       console.log(id, note)
 
-      axios.patch(`http://127.0.0.1:8000/notes/${id}`, note)
+      axios.patch(`https://be.thinh.com/notes/${id}`, note)
             .then(function (response) {
               console.log(response);
             })
 }
 
  const deleteNote = (id)=>{
-      axios.delete(`http://127.0.0.1:8000/notes/${id}`)
+      axios.delete(`https://be.thinh.com/notes/${id}`)
             .then(function (response) {
               console.log(response);
             })

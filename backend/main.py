@@ -11,8 +11,7 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:5173",
-    "http://thinh.com",
-    "http://backend.thinh.com",
+    "http://thinh.com:90",
     "http://meomeo.thinh.com"
 ]
 

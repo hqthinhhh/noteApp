@@ -3,9 +3,9 @@ from contextvars import ContextVar
 import peewee
 
 POSTGRES_USER = 'postgres'
-POSTGRES_PASS = '20072001'
+POSTGRES_PASS = 'postgres'
 POSTGRES_DB = 'todolist'
-POSTGRES_PORT = '5432'
+POSTGRES_PORT = '5000'
 POSTGRES_HOST = 'localhost'
 
 db_state_default = {"closed": None, "conn": None, "transactions": None}
